@@ -1,0 +1,6 @@
+name: move-to-iac
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: migrate to iac

@@ -1,0 +1,16 @@
+pulumi import azure-native:resources:ResourceGroup resource_group /subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/AmericanExpress2_JatinShah_Workshop
+
+
+azure-native:web:AppServicePlan
+azure-native:web:WebApp
+azure-native:sql:Server
+azure-native:sql:Database
+
+pulumi import azure-native:web:AppServicePlan js_app_service_plan /subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/AmericanExpress2_JatinShah_Workshop/providers/Microsoft.Web/serverFarms/amex2jatinshah-non-iac-asp
+pulumi import azure-native:web:WebApp js_web_app /subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/AmericanExpress2_JatinShah_Workshop/providers/Microsoft.Web/sites/amex2jatinshah-non-iac-app
+pulumi import azure-native:sql:Server js_server /subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/AmericanExpress2_JatinShah_Workshop/providers/Microsoft.Sql/servers/amex2jatinshah-non-iac-sqlserver
+pulumi import azure-native:sql:Database js_database /subscriptions/d33b95c7-af3c-4247-9661-aa96d47fccc0/resourceGroups/AmericanExpress2_JatinShah_Workshop/providers/Microsoft.Sql/servers/amex2jatinshah-non-iac-sqlserver/databases/amex2jatinshah-non-iac-db
+
+
+
+Server=tcp:amex2jatinshah-non-iac-sqlserver.database.windows.net,1433;Initial Catalog=amex2jatinshah-non-iac-db;Persist Security Info=False;User ID=db;Password=NOTrAoG8jWappv58QvGwhWzbGWb0KsYK;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
