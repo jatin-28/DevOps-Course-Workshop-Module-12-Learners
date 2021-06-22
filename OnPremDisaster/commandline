@@ -1,3 +1,6 @@
 az deployment group create --resource-group AmericanExpress2_JatinShah_Workshop --template-file template.json --parameters parameters.json --parameters administratorLoginPassword=X_dF3n7W --parameters storageAccountKey=SBXPerao7sy3YE8iDnon/N2paIE//wet/CyCvMzCOwY6W5dj2UIJfRlZS3mYfdMckc5Rc9TOXHGHd7Yn/vu+Iw== --parameters importDatabase=true -c
 Please provide string value for 'subscriptionId' (? for help): d33b95c7-af3c-4247-9661-aa96d47fccc0
 Please provide string value for 'name' (? for help): iacmigrationjs
+
+
+az deployment group create --resource-group AmericanExpress2_JatinShah_Workshop --template-file template.json --parameters parameters.json --parameters administratorLoginPassword=X_dF3n7W -c
